@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    h2 {
+        color: orange;
+    }
+    
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background: #0d0d0d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 35px 10%;
+    }
+    
+    main.row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+    
+    .col header.tittle {
+        font-family: helvetica;
+        color: #141414;
+        padding: 0px 0px 20px 30px;
+    }
+    
+    .col .contents {
+        padding: 0px 30px;
+        border-left: 2px solid #fcfafa;
+    }
+    
+    .col .contents .box {
+        position: relative;
+        padding: 20p;
+        border: 1px solid #f7f6f6;
+        background-color: #fbf9f9;
+        cursor: pointer;
+        transition: all 0.4s;
+        margin-bottom: 20px;
+    }
+    
+    .col .contents .box:hover {
+        box-shadow: 0px 3px 12px 0px #fafbfb;
+        border: 1px solid transparent;
+    }
+    
+    .col .contents .box::before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        right: calc(100% + 22px);
+        top: 0;
+        background-color: #f0f0f0;
+        border: 2px solid rgb(222, 219, 219);
+    }
+    
+    .box h4 {
+        position: relative;
+        color: #070707;
+    }
+    
+    .box h3 {
+        font-size: 19px;
+        padding: 10px 0px 6px;
+        font-family: helvetica;
+        color: rgb(105, 103, 103);
+    }
+    
+    .box p {
+        line-height: 1.2;
+        color: #274852;
+        font-size: 17px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <main class="row">
+            <section class="col">
+                <header class="tittle">
+                    <h2>EDUCATION</h2>
+                </header>
+
+                <div class="contents">
+                    <div class="box">
+                        <h4>2019-2023</h4>
+                        <h3>B.Tech</h3>
+                        <p> Sathyabama University</p>
+                    </div>
+
+                    <div class="box">
+                        <h4>2017-2019</h4>
+                        <h3>Intermediate</h3>
+                        <p> Sri Chaitanya Juniour College</p>
+                    </div>
+
+                    <div class="box">
+                        <h4>2016-2017</h4>
+                        <h3>Secondary School</h3>
+                        <p> Sree Balajee Vidhyalayam High School</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="col">
+                <header class="tittle">
+                    <h2>EXPERIENCE</h2>
+                </header>
+
+                <div class="contents">
+                    <div class="box">
+                        <h4>2022 (Feb-May)</h4>
+                        <h3>Internship</h3>
+                        <p> HCL Tech</p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
